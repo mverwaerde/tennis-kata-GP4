@@ -54,7 +54,7 @@ class TennisGameUneasyImplementedTest {
   @ParameterizedTest
   @MethodSource("getAllScores")
   public void checkAllScoresTennisGame2(int player1Score, int player2Score, String expectedScore) {
-    TennisGameUneasyImplemented game = new TennisGameUneasyImplemented("player1", "player2");
+    TennisGameUneasyImplemented game = new TennisGameUneasyImplemented();
 
     int highestScore = Math.max(player1Score, player2Score);
     for (int i = 0; i < highestScore; i++) {
